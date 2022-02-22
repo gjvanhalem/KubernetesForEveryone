@@ -32,14 +32,14 @@ You probably see something similar to above. Those are the default namespaces th
 Now lets create your own namespace. Use the command below and change the name in the example to your own name or favorite alias.
 
 ```bash
-kubectl create namespace insert-name
+kubectl create namespace <insert-name>
 ```
 
 Most commands are easy to use in Kubernetes, switching between namespaces is a different story. Copy and execute the command below to switch to your own namespace. Don't forget to switch the namespace name to fit the one you used earlier.
 The actions which follow will now only execute within this namespace. Deployments in other namespaces will not be visible. Now lets validate the namespace change with the second command.
 
 ```bash
-kubectl config set-context $(kubectl config current-context) --namespace=<insert-namespace-name>
+kubectl config set-context $(kubectl config current-context) --namespace=<insert-name>
 # Validate it 
 kubectl config view | grep namespace:
 # When using powershell | 
