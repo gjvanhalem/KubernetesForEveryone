@@ -34,7 +34,7 @@ Invoke-WebRequest -OutFile 'c:\minikube\kubectl.exe' -Uri 'https://dl.k8s.io/rel
 
 ## If you have installed Hyper-V then change the default driver to hyperv
 ```powershell 
-minikube set --driver=hyperv 
+minikube config set driver hyper
 ```
 
 ## Start Minikube
