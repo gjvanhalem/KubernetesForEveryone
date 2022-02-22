@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: 
+  labels:
+    app: 
+spec:
+  ports:  
+  - port: < Specify port which will be exposed to the 'world'>  
+    targetPort: < Specify the container port>
+  selector:
+    app: 
+  type: LoadBalancer
